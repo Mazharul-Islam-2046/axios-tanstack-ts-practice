@@ -1,0 +1,11 @@
+import axios from "axios";
+
+export const api = axios.create({
+    baseURL: 'https://jsonplaceholder.typicode.com',
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+    }
+})
